@@ -6,7 +6,7 @@ Clone the repository of the project and install requirements as:
 git clone https://github.com/neuralinternet/compute-subnet.git
 cd compute-subnet
 python3 -m pip install -r requirements.txt
-pyhton3 -m pip install -e .
+python3 -m pip install -e .
 ```
 
 Before moving forward you need to have wallet (Cold Key) and Hot key:
@@ -38,6 +38,19 @@ sudo npm install pm2 -g
 
 You need Docker too, install going through this link (https://docs.docker.com/engine/install/ubuntu/).
 
+You need open TCP ports too, you can open ports using `ufw` as below (put any number in place of xx and yy of your choice and use them as TCP port:
+
+
+```
+sudo apt update
+sudo apt install ufw
+
+sudo ufw allow xxxx:yyyy/tcp
+sudo ufw enable
+sudo ufw status
+
+```
+
 
 Now, using `pm2` run `miner` as:
 
@@ -57,7 +70,7 @@ pm2 start neurons/validator.py --name Validator --interpreter python3 -- --netui
 After launching miner/validator you can then check the logs as:
 
 ```
-pm2 logs 
+pm2 logs or pm2 monit
 
 ```
 
