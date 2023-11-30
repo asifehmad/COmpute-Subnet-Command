@@ -38,7 +38,7 @@ sudo npm install pm2 -g
 
 You need Docker too, install going through this link (https://docs.docker.com/engine/install/ubuntu/).
 
-You need open TCP ports too, you can open ports using `ufw` as below (put any number in place of xx and yy of your choice and use them as TCP port:
+You need open TCP ports too, you can open ports using `ufw` as below (put any number in place of xx and yy of your choice and use them as axon port:
 
 
 ```
