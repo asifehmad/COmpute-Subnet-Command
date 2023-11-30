@@ -18,7 +18,7 @@ btcli w new_hotkey
 
 
 
-Now, you need TAO in your wallet (coldkey) for registration
+Now, you need TAO in your wallet (coldkey) for registration.
 
 For registration of the hotkey run:
 
@@ -50,7 +50,7 @@ pm2 start neurons/miner.py --name MINER --interpreter python3 -- --netuid 27 --w
 To run a `validator` use:
 
 ```
-pm2 start neurons/validator.py --name MINER --interpreter python3 -- --netuid 27 --wallet.name COLDKEY --wallet.hotkey HOTKEY --axon.port AXON-PORT --logging.trace --logging.debug --subtensor.network finney 
+pm2 start neurons/validator.py --name Validator --interpreter python3 -- --netuid 27 --wallet.name COLDKEY --wallet.hotkey HOTKEY --axon.port AXON-PORT --logging.trace --logging.debug --subtensor.network finney 
 
 ```
 
