@@ -70,8 +70,13 @@ pm2 start neurons/validator.py --name Validator --interpreter python3 -- --netui
 After launching miner/validator you can then check the logs as:
 
 ```
-pm2 logs or pm2 monit
+pm2 logs 
 
+```
+or 
+
+```
+pm2 monit
 ```
 
 Good Luck!
